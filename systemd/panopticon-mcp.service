@@ -1,0 +1,19 @@
+[Unit]
+Description=Panopticon MCP server (streamable HTTP)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/srv/panopticon/panopticon-mcp
+EnvironmentFile=%h/.config/panopticon/mcp.env
+ExecStart=%h/.local/bin/node20 src/index.js
+Restart=always
+RestartSec=5s
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=panopticon-mcp
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=default.target

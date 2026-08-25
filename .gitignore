@@ -1,0 +1,16 @@
+# Secrets. .env.* covers the editor and shell backups that .env alone misses,
+# which is how a credentials file reached an object store once already.
+.env
+.env.*
+*.bak
+!.env.example
+
+# Dependencies
+node_modules/
+
+# The deploy runbook names the tunnel, the tailnet and a second service on this
+# host. STYLE.md A1: it does not leave the machine.
+DEPLOY.md
+
+npm-debug.log*
+.DS_Store
