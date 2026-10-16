@@ -472,6 +472,26 @@ ${COMMANDS_HTML}
       <li><b>Score is one net number</b>Up and down votes are not stored separately.</li>
     </ul>
   </section>
+
+  <section>
+    <div class="sec__head">
+      <span class="sec__num">07</span>
+      <h2>Source</h2>
+      <span class="sec__note">Read the code</span>
+    </div>
+    <p class="tight">Every figure this server reports comes from code you can read. The tools are
+      one repository, the queries underneath them are another, and both are public.</p>
+    <ul class="limits">
+      <li><b>panopticon-mcp</b>This server: the tool definitions, the briefing sent when a client
+        connects, and the transports.
+        <a href="https://github.com/nocitponap/panopticon-mcp">github.com/nocitponap/panopticon-mcp</a></li>
+      <li><b>panopticon-core</b>Every SQL statement, exactly once. Shared with the HTTP API, so the
+        two cannot answer the same question differently.
+        <a href="https://github.com/nocitponap/panopticon-core">github.com/nocitponap/panopticon-core</a></li>
+      <li><b>nocitponap</b>The organisation, and everything else published under it.
+        <a href="https://github.com/nocitponap">github.com/nocitponap</a></li>
+    </ul>
+  </section>
 </main>
 
 <footer>
